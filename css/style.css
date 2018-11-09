@@ -81,11 +81,12 @@ main .contents-area {
     text-align: center; }
     main .contents-area .mainbox .inner {
       width: 30.333%;
-      background-color: #F5DEB3;
+      background-color: #FFE4C4;
       /*                margin: 0 10px 0 10px; */
       /*                height: 150px; */ }
       main .contents-area .mainbox .inner p.title-area {
         /*                    height: 50%;　*/
+        background-color: #F5DEB3;
         color: #A0522D;
         font-size: 180%;
         font-weight: bold; }
@@ -108,8 +109,7 @@ main .contents-area {
       text-align: center; }
       main .contents-area .mainbox .inner {
         width: 100%;
-        margin: 0 10px 40px 10px;
-        /*                height: 150px; */ }
+        margin: 0 10px 40px 10px; }
         main .contents-area .mainbox .inner p.title-area {
           /*                    height: 50%;　*/
           font-size: 180%;
@@ -118,7 +118,8 @@ main .contents-area {
           font-color: #bea300; } }
 footer {
   padding: 5px 0 10px 0;
-  text-align: center; }
+  text-align: center;
+  background-color: #FFF0F5; }
   footer a.button-footer {
     position: relative;
     display: block;
@@ -131,7 +132,20 @@ footer {
     font-weight: bold;
     width: 140px;
     height: 25px;
-    padding: 5px 5px; }
+    padding: 5px 5px;
+    transition: .3s; }
+  footer a.button-footer:hover {
+    /* position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    width: 140px; 
+    height: 25px;
+    padding: 5px 5px;
+    border-radius: 10px; 角丸 %はこのボタンの縦横に対して*/
+    background-color: #fdfcf6;
+    color: #14c0c9; }
 
 /*
         p{
@@ -158,5 +172,15 @@ h1{
     color: $keyColor;
 }
 */
+/* 空間調節の方法（マージン固定の場合）
+            .inner{
+                
+                width: 100%;
+                margin: 0 10px 40px 10px;
+                // @include calc( width, '100% / 3 - 27px'); //間の80pxを３ボックスで負担
+                //&:nth-child(3n){　//３つめのものだけ○○するコマンド
+                //    margin-right: 0;
+                //
+            }*/
 
 /*# sourceMappingURL=style.css.map */
