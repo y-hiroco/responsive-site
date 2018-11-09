@@ -117,12 +117,14 @@ main{
             .inner{
                 
                 width: 30.333%;
+                background-color: #F5DEB3;
 /*                margin: 0 10px 0 10px; */
 /*                height: 150px; */
                 
                 p.title-area{
                     
 /*                    height: 50%;　*/
+                    color: #A0522D;
                     font-size: 180%;
                     font-weight: bold;
                     
@@ -171,6 +173,10 @@ main{
                 margin: 0 10px 40px 10px;
 /*                height: 150px; */
                 
+               // @include calc( width, '100% / 3 - 27px');
+                //&:nth-child(3n){
+                //    margin-right: 0;
+                //}
                 p.title-area{
                     
 /*                    height: 50%;　*/
@@ -198,6 +204,7 @@ main{
 
 footer{
     
+    padding: 5px 0 10px 0;
     text-align: center;
     
     a.button-footer{

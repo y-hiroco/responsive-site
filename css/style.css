@@ -81,10 +81,12 @@ main .contents-area {
     text-align: center; }
     main .contents-area .mainbox .inner {
       width: 30.333%;
+      background-color: #F5DEB3;
       /*                margin: 0 10px 0 10px; */
       /*                height: 150px; */ }
       main .contents-area .mainbox .inner p.title-area {
         /*                    height: 50%;　*/
+        color: #A0522D;
         font-size: 180%;
         font-weight: bold; }
       main .contents-area .mainbox .inner p.text-box {
@@ -115,6 +117,7 @@ main .contents-area {
         main .contents-area .mainbox .inner p.text-box {
           font-color: #bea300; } }
 footer {
+  padding: 5px 0 10px 0;
   text-align: center; }
   footer a.button-footer {
     position: relative;
