@@ -1,0 +1,159 @@
+@charset "UTF-8";
+/* ちょっと消してみる
+/* 文字コードの指定 
+@charset "UTF-8";  
+
+/* Google Fonts用のCSSを読み込み
+@import 'https://fonts.googleapis.com/css?family=Abel';　 */
+@import url(https://fonts.googleapis.com/css?family=Abel);
+/* 白っぽい色 */
+/* おうど色 */
+/* 青緑色 */
+/* 黒っぽい色 */
+/* Base
+--------------------------------------------*/
+html {
+  font-size: 62.5%; }
+
+/*html{ font-size:100%;} */
+body {
+  color: #4c4c4c;
+  font-size: 1.4rem;
+  font-family: "游ゴシック", YuGothic, "メイリオ", Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  line-height: 1.6;
+  letter-spacing: 0.1em;
+  background-color: #fdfcf6; }
+
+a {
+  color: #14c0c9;
+  text-decoration: none; }
+  a:visited {
+    color: #0f949b; }
+  a:hover {
+    color: #0f949b; }
+  a:active {
+    color: #16d6e0; }
+
+h2 {
+  text-align: center;
+  padding: 5% 0 5% 0;
+  font-weight: bold;
+  font-size: 200%; }
+
+/* 【PC】header
+----------------------------------------------*/
+.text-center {
+  text-align: center; }
+
+/* memo
+
+    width:100%;
+
+*/
+header .photo {
+  background-image: url(../images/img-aki.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  /* 写真の大きさ */
+  height: 500px;
+  /* 写真の大きさ */ }
+
+/* 【mobile】header
+----------------------------------------------*/
+@media (max-width: 768px) {
+  header .photo {
+    height: 250px;
+    /* 写真の大きさ */ } }
+/* main
+----------------------------------------------*/
+main .contents-area {
+  position: relative;
+  width: 100%;
+  height: 120%;
+  padding: 5% 0 5% 0; }
+  main .contents-area .mainbox {
+    display: flex;
+    flex-wrap: wrap;
+    /*            justify-content: space-between; */
+    justify-content: space-around;
+    text-align: center; }
+    main .contents-area .mainbox .inner {
+      width: 30.333%;
+      /*                margin: 0 10px 0 10px; */
+      /*                height: 150px; */ }
+      main .contents-area .mainbox .inner p.title-area {
+        /*                    height: 50%;　*/
+        font-size: 180%;
+        font-weight: bold; }
+      main .contents-area .mainbox .inner p.text-box {
+        font-color: #bea300; }
+
+/* 【mobile】main
+----------------------------------------------*/
+@media (max-width: 768px) {
+  main .contents-area {
+    position: relative;
+    width: 100%;
+    height: 120%;
+    padding: 5% 0 5% 0; }
+    main .contents-area .mainbox {
+      /*            display: flex;
+                  flex-wrap: wrap;
+                  justify-content: space-between;
+                  justify-content: space-around; */
+      text-align: center; }
+      main .contents-area .mainbox .inner {
+        width: 100%;
+        margin: 0 10px 40px 10px;
+        /*                height: 150px; */ }
+        main .contents-area .mainbox .inner p.title-area {
+          /*                    height: 50%;　*/
+          font-size: 180%;
+          font-weight: bold; }
+        main .contents-area .mainbox .inner p.text-box {
+          font-color: #bea300; } }
+footer {
+  text-align: center; }
+  footer a.button-footer {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    /* 角丸 %はこのボタンの縦横に対して*/
+    background-color: #14c0c9;
+    color: #fff;
+    font-weight: bold;
+    width: 140px;
+    height: 25px;
+    padding: 5px 5px; }
+
+/*
+        p{
+        
+            font-size: 120%;
+        
+        }    
+        
+        .inner{
+            
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            
+            
+        }
+*/
+/* 
+$keyColor: blue;
+
+h1{
+    color: $keyColor;
+}
+*/
+
+/*# sourceMappingURL=style.css.map */
